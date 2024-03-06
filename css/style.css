@@ -1,1 +1,431 @@
+/* 
+font-family: "Open Sans", sans-serif; 
+font-family: "Oswald", sans-serif;
 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, section, header, span, div, footer, ul, ol{
+    padding: 0;
+    margin: 0;
+}
+
+/* heder part css start  */
+
+header{
+    background-color: #0872b9;
+    padding: 10px;
+}
+
+.wellcome p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+.header-icon ul{
+    float: right;
+
+}
+.header-icon ul li{
+    float: left;
+    padding: 0 20px;
+    margin-top: 10px;
+
+}
+.header-icon ul li a{
+    color: white;
+    transition: all linear .03s;
+
+}
+
+.header-icon ul li a:hover{
+    color: black;
+    transition: all linear .03s;
+}
+
+/* heder part css end */
+
+/* navigation part css star  */
+.navbar-nav .nav-item .nav-link.active{
+    color: #4488c3;
+}
+/* navigation part css end */
+
+/* Bannar part css start  */
+#bannar{
+    background: url(../images/banar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bannar-over{
+    padding: 88px 0;
+    background-color: rgb(0,0,0,0.6);
+}
+
+.bannar-content{
+    text-align: right;
+    color: white;
+}
+
+.bannar-content h3{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+.bannar-content h2{
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+
+}
+.bannar-content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    padding:30px 0;
+
+}
+.bannar-content a{
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    margin-left: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.bannar-content a:hover{
+    background-color: #0872b9;
+    border: 2px solid #0872b9;
+}
+/* Bannar part css end */
+
+/* Common head css start  */
+.common-heading h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+}
+.common-heading{
+    position: relative;
+
+}
+.common-heading img{
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+
+
+}
+/* Common head css end */
+
+
+/* About us css start  */
+.about-content:first-child p{
+    margin: 35px 0;
+}
+
+.about-content p{
+    line-height: 30px;
+}
+/* About us css end */
+
+/* Service css part start  */
+.service_main{
+    position: relative;
+    margin-top: 30px;
+}
+
+.service_main:hover .ser-icon-main,
+.service_main:hover .ser-icon{
+    background-color: #5bc5f4;
+    transition: all linear .3s;
+}
+.ser-icon-main{
+    height: 80px;
+    width: 80px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position:absolute;
+    top: -21%;
+    left: 40%;
+    border: 3px solid white;
+    transition: all linear .3s;
+}
+.ser-icon{
+    height: 70px;
+    width: 70px;
+    background-color: #f1f1f1;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .3s;
+}
+.service_content{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 51px 20px 20px;
+}
+.service_content h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.service_content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+    
+  
+}
+/* Service css part end */
+
+/* gallary css part start  */
+.gallary_small{
+    position: relative;
+    margin-bottom: 20px;
+}
+.gallary_overly{
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.gallary_overly a{
+    height: 40px;
+    width: 40px;
+    background-color: #5bc5f4;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+}
+.gallary_big:hover .gallary_overly,
+.gallary_small:hover .gallary_overly{
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.gallary_big{
+    position: relative;
+}
+/* gallary css part end */
+
+/* Team part star  */
+.team_img{
+    position: relative;
+}
+.team_overlly{
+    height: 100%;
+    width: 37%;
+    background: rgb(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.team_img:hover .team_overlly{
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.team_overlly ul li a{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    margin-top: 10px;
+    transition: all linear .3s;
+}
+.team_overlly ul li a:hover{
+    background-color: #5bc5f4;
+    transition: all linear .3s;
+    border: 2px solid #5bc5f4;
+}
+.team_title{
+    text-align: center;
+}
+.team_title h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-Top: 10px;
+    transition: all linear .3s;
+}
+
+.team_title p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 25px;
+}
+.team_main:hover .team_title h4{
+    color: #5bc5f4;
+    transition: all linear .3s;
+}
+/* Team part end */
+/* testimonial css part star  */
+.round_img{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.testimonial_content{
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.testimonial_content h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.testimonial_content ul{
+    display: inline-flex;
+}
+.testimonial_content ul li a{
+    color: #5bc5f4;
+    padding: 7px 0;
+    display: block;
+}
+.testimonial_content h6{
+    font-family: "Oswald", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.testimonial_content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+.testimonial_piramid{
+    height: 40px;
+    width: 40px;
+    background-color: #f1f1f1;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -5%;
+    left: 45%;
+    z-index: -1;
+}
+/* testimonial css part end */
+
+/* Footer css part start  */
+.footer{
+    background-color: #353535;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+.footer_content p{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 25px;
+}
+.footer_content p:first-child{
+    padding: 20px 0;
+}
+.footer_common_head h4{
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.footer_icon a{
+    height: 40px;
+    width: 40px;
+    background-color: #5bc5f4;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.footer_number p{
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-size: 13px;
+    line-height: 27px;
+}
+.footer_menu ul li a{
+    color:white;
+    line-height: 40px;
+    
+}
+.footer_menu ul li a:hover{
+    color: #5bc5f4;
+}
+.footer_gallary{
+    margin-bottom: 20px;
+}
+.copyright{
+    background-color: #555555;
+}
+.copyright_content{
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+.copyright_content p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.copyright_content span{
+    color: #5bc5f4;
+}
+/* Footer css part end */
